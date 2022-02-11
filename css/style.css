@@ -1,0 +1,110 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+html, body {
+    font-size: 62.5%; /* 16px => 10px */
+}
+
+.container { /* like wrapper */
+    width: 113.5rem; /* 1rem = 10px */
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 7.9rem;
+    height: 2.8rem;
+    margin-right: 3.9rem;
+}
+
+/*.header__nav a:last-child {*/
+/*    margin-left: 2.4rem;*/
+/*}*/
+
+.header__nav a:not(:first-child){
+    margin-left: 2.4rem;
+    /*color: red;*/
+}
+
+.header__nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Roboto Regular", Roboto;
+}
+
+.header__social a {
+    text-decoration: none;
+}
+
+.header__social-icon {
+    width: 1.7rem;
+    height: 1.6rem;
+}
+
+.header__social-icon:not(:last-child) {
+    margin-right: 2rem;
+}
+
+body {
+    background: url("../img/background.jpg");
+}
+
+.footer {
+    background: #030102;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    font-family: "Roboto Regular", Roboto;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu {
+    display: flex;
+    padding-left: 0;
+    color: #ffffff;
+}
+
+.footer__menu li {
+    list-style: none;
+}
+
+.footer__menu li a {
+    color: #ffffff;
+    opacity: 40%;
+    text-decoration: none;
+}
+
+.footer__copy {
+    opacity: 40%;
+}
+
+.footer__menu li:not(:last-child) {
+    margin-right: 2.5rem;
+}
