@@ -17,6 +17,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     font-size: 62.5%; /* 16px => 10px */
     font-family: 'Roboto', sans-serif;
@@ -89,17 +100,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    /*background: url("../img/background.jpg");*/
     background: url("../img/background.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
 }
-
 
 .main {
     padding-top: 18.7rem;
     /*background: url("../img/background.jpg");*/
-    background: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
+    /*background: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position-x: center;*/
+    /*background-position-y: top;*/
 }
 
 .main__rating-title {
