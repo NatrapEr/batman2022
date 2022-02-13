@@ -291,6 +291,6 @@ body {
     margin-right: 2.5rem;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) and (max-height: 900px) {
 
 }
