@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
+<!--    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"/>-->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
@@ -13,6 +15,7 @@
     <title>Batman</title>
 </head>
 <body>
+
 <header class="header">
     <div class="container">
         <div class="header__menu">
@@ -82,13 +85,38 @@
             </div>
         </div>
         <h1 class="main__header">Бэтмен</h1>
-        <div class="main__description">
-            После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением
-            беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты,
-            загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом
-            оказывается сам Бэтмен.
+        <div class="main__description-wrap">
+            <div class="main__description">
+                После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением
+                беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты,
+                загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом
+                оказывается сам Бэтмен.
+            </div>
+            <div class="main__button-play">
+                <div class="main__button-dark">
+                    <img src="img/play-icon.svg" alt="play">
+                </div>
+            </div>
         </div>
         <a href="#" class="main__button">Купить билеты</a>
+
+        <div class="main-slider__wrap">
+            <div class="main-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="main-slider__slide swiper-slide">
+                        <img src="img/slide-1.svg" alt="slide">
+                        <span>Трейлер #1</span>
+                    </div>
+                    <div class="main-slider__slide swiper-slide">
+                        <img src="img/slide-2.svg" alt="slide">
+                        <span>Трейлер #2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__arrow">
+                <img src="img/arrow-slider.svg" alt="#">
+            </div>
+        </div>
     </div>
 </main>
 
@@ -111,6 +139,8 @@
     </div>
 </footer>
 
-<!--<script defer src="js/main.js"></script>-->
+<!--<script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>-->
+<script src="js/swiper-bundle.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
