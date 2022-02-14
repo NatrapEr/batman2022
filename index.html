@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/load.css">
     <link rel="stylesheet" href="css/normalize.css">
-<!--    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"/>-->
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
@@ -15,6 +15,8 @@
     <title>Batman</title>
 </head>
 <body>
+
+<div class="bc"><div class="loading-spinner"></div></div>
 
 <header class="header">
     <div class="container">
@@ -39,11 +41,22 @@
                 <img src="img/facebook.svg" alt="facebook">
             </a>
         </div>
+        <div class="header__nav-mobile">
+            <a href="#">Описание</a>
+            <a href="#">Трейлер</a>
+            <a href="#">Отзывы</a>
+        </div>
+        <div class="header__menu-close">
+            <img src="img/menu-button-close.svg" alt="close">
+        </div>
     </div>
 </header>
 
 <main class="main">
     <div class="container">
+        <div class="menu-burger">
+            <img src="img/logo.svg" alt="burger">
+        </div>
         <div class="main__rating">
             <div class="main__rating-title">
                 2022, боевик, триллер
@@ -154,6 +167,12 @@
         </ul>
     </div>
 </footer>
+
+<div class="modal close">
+    <div class="modal__inner">
+        <iframe class="yt" width="100%" height="100%" src="https://www.youtube.com/embed/Sdp6VL_NBnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 <!--<script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>-->
 <script src="js/swiper-bundle.js"></script>
