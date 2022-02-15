@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -417,13 +421,13 @@ body {
     overflow-x: hidden;
     padding: 3rem 0;
     z-index: 100;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     display: none;
 }
 
 .modal__inner {
-    width: 100rem;
-    height: 60rem;
+    width: 150rem;
+    height: 80rem;
 }
 
 .active {
@@ -433,6 +437,9 @@ body {
 /* MOBILE */
 
 @media screen and (max-width: 48em) {
+    .bc {
+        height: 200rem;
+    }
     html {
         font-size: 10px;
     }
@@ -447,7 +454,7 @@ body {
         top: 0;
         transform: translate(-28%, 0);
         padding-bottom: 4rem;
-        padding-top: 4rem;
+        padding-top: 2.7rem;
         z-index: 10;
         display: none;
     }
@@ -543,5 +550,3 @@ body {
         height: 60%;
     }
 }
-
-
